@@ -3135,12 +3135,12 @@ int main(int argc, char* argv[])
 
 	static int d1;
 	static int d2;
-	static int no_sub = 62;//338; //808
+	static int no_sub = 235;//338; //808
 	static int start_id;
 	static int end_id;
 	int post =0;
 
-	ifstream ifile ("/data/ahula/CambrStab.bin", ios::in | ios::binary| ios::ate);
+	ifstream ifile ("/Inputdata.bin", ios::in | ios::binary| ios::ate);
 	ifstream::pos_type il;
 	char * melblock;
     streampos size;
@@ -3431,12 +3431,12 @@ int main(int argc, char* argv[])
 	path_numbers[0][1]=40;	
 	path_numbers[0][0]=40;
 	MEMORY_POOL<True_node> mexpool;	
-	ofstream ofs("/data/ahula/NSPN/FlexibleStable6.bin", ofstream::out| ofstream::binary);			
+	ofstream ofs("/Outputdata.bin", ofstream::out| ofstream::binary);			
 	int iteration = 1;
 	static boost::array<int,1> multiplier;
 	multiplier[0]=1;
-	start_id= 60;
-	end_id = 62;
+	start_id= 0;
+	end_id = 235;
 	True_node* investor_node;
 	True_node* trustee_node;
 	int countr = 0;
